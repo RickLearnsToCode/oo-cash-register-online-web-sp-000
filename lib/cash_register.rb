@@ -18,7 +18,6 @@ attr_accessor :total, :discount, :items
     @items << title
     previous_total = @total + (price*quantity)
     @total += (price * quantity)
-    self.apply_discount
     @total
 
   end
