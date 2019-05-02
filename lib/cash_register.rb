@@ -32,6 +32,7 @@ attr_accessor :total, :discount, :items
       @total -= @discount
       puts "After the discount, the total comes to $#{@total}."
       @total
+    end
 
   end
 
