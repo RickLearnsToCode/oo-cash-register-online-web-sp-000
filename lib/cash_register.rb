@@ -4,7 +4,7 @@ attr_accessor :total, :discount, :items
 
 
 
-  def initialize(employee_discount = nil)
+  def initialize(employee_discount = 0)
       @total = 0
       @discount = employee_discount
       @items = []
@@ -15,14 +15,19 @@ attr_accessor :total, :discount, :items
   end
 
   def add_item(title, price, quantity=1)
+    @items << title
     previous_total = @total + (price*quantity)
     @total += (price * quantity)
-    @items << title
+    self.apply_discount
+    
 
   end
 
 
   def apply_discount
+    @total = @discount = 0 ? @total : @total * (1-@discount)
+
+    
   end
 
 
