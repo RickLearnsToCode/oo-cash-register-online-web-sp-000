@@ -25,7 +25,14 @@ attr_accessor :total, :discount, :items
 
 
   def apply_discount
-    @total = @discount = 0 ? @total : @total * (1-@discount)
+    if @discount = 0
+      puts "There is no discount to apply."
+      @total
+    else
+      @total -= @discount
+      puts "After the discount, the total comes to $#{@total}."
+      @total  
+
   end
 
 
