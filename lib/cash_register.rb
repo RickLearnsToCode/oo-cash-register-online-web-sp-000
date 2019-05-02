@@ -20,7 +20,6 @@ attr_accessor :total, :discount, :items, :previous_transaction_amount
     @previous_transaction_amount = (price * quantity)
     @total += (price * quantity)
     @total
-
   end
 
 
@@ -31,6 +30,7 @@ attr_accessor :total, :discount, :items, :previous_transaction_amount
     else
       return "After the discount, the total comes to $#{@total.to_int}."
     end
+  end
 
     def void_last_transaction
       @total -= @previous_transaction_amount
