@@ -7,6 +7,7 @@ attr_accessor :total, :discount, :items
   def initialize(employee_discount = nil)
       @total = 0
       @discount = employee_discount
+      @items = []
     end
 
   def total
