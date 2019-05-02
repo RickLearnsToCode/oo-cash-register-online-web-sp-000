@@ -17,13 +17,13 @@ attr_accessor :total, :employee_discount, :items
     previous_total = @total + price
     @total += price
     @items << title
-    
+
   end
 
 
   def apply_discount
   end
 
-  
+
 
 end
