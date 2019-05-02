@@ -28,7 +28,7 @@ attr_accessor :total, :discount, :items
     if @discount == 0.0
       return "There is no discount to apply."
     else
-      return "After the discount, the total comes to $#{@total}."
+      return "After the discount, the total comes to $#{@total.to_int}."
     end
 
   end
