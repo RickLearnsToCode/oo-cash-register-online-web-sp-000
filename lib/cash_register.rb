@@ -17,7 +17,7 @@ attr_accessor :total, :discount, :items, :previous_transaction_amount
 
   def add_item(title, price, quantity=1)
     quantity.times { @items << title}
-    @previous_transaction_amount = (price * quantity))
+    @previous_transaction_amount = (price * quantity)
     @total += (price * quantity)
     @total
 
