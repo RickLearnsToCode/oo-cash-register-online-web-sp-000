@@ -1,12 +1,12 @@
 
 class CashRegister
-attr_accessor :total, :employee_discount, :items
+attr_accessor :total, :discount, :items
 
 
 
   def initialize(employee_discount = nil)
       @total = 0
-      @employee_discount = employee_discount
+      @discount = employee_discount
     end
 
   def total
@@ -23,6 +23,7 @@ attr_accessor :total, :employee_discount, :items
 
   def apply_discount
   end
+
 
 
 
