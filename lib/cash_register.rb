@@ -19,7 +19,7 @@ attr_accessor :total, :discount, :items
     previous_total = @total + (price*quantity)
     @total += (price * quantity)
     self.apply_discount
-    
+
 
   end
 
@@ -27,7 +27,7 @@ attr_accessor :total, :discount, :items
   def apply_discount
     @total = @discount = 0 ? @total : @total * (1-@discount)
 
-    
+
   end
 
 
