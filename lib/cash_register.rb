@@ -43,4 +43,3 @@ attr_accessor :total, :discount, :items, :previous_transaction_amount
 
 
 
-end
