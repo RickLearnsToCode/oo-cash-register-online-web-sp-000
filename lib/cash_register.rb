@@ -1,6 +1,6 @@
 
-class CashRegister 
-attr_accessor :total 
+class CashRegister
+attr_accessor :total
 
 
   def initialize(employee_discount = 0)
