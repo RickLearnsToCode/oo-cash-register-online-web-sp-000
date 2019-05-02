@@ -11,14 +11,13 @@ attr_accessor :total, :discount, :items
     end
 
   def total
-    @total
+    self.apply_discount
   end
 
   def add_item(title, price, quantity=1)
     @items << title
     previous_total = @total + (price*quantity)
     @total += (price * quantity)
-    self.apply_discount
     @total
 
   end
